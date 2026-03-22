@@ -15,5 +15,6 @@ data class DailyStat(
     val guarda: String,
     val funcionarios: Int,
     val contratistas: Int,
-    val visitantes: Int
+    val visitantes: Int,
+    val menoresEdad: Int = 0
 )

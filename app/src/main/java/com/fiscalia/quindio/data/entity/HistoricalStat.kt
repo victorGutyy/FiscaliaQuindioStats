@@ -16,5 +16,6 @@ data class HistoricalStat(
     val funcionarios: Int,
     val contratistas: Int,
     val visitantes: Int,
+    val menoresEdad: Int = 0,
     val archivedDate: LocalDate // Fecha en que se archivó
 )

@@ -53,7 +53,8 @@ class StatViewModel(application: Application) : AndroidViewModel(application) {
         guarda: String,
         funcionarios: Int,
         contratistas: Int,
-        visitantes: Int
+        visitantes: Int,
+        menoresEdad: Int = 0
     ) {
         viewModelScope.launch {
             _isLoading.value = true
@@ -71,7 +72,8 @@ class StatViewModel(application: Application) : AndroidViewModel(application) {
                     guarda = guarda,
                     funcionarios = funcionarios,
                     contratistas = contratistas,
-                    visitantes = visitantes
+                    visitantes = visitantes,
+                    menoresEdad = menoresEdad
                 )
 
                 repository.saveStat(stat)

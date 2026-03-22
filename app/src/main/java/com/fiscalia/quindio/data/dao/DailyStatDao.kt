@@ -31,4 +31,7 @@ interface DailyStatDao {
 
     @Query("SELECT * FROM daily_stats")
     suspend fun getAllStatsSync(): List<DailyStat>
+
+    @Query("SELECT * FROM daily_stats WHERE sede = :sede AND fecha = :date")
+    suspend fun getStatsBySedeAndDate(sede: String, date: LocalDate): List<DailyStat>
 }

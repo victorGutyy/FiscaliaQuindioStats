@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<paths>
-    <external-files-path name="documents" path="Documents/" />
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Archivos Excel y CSV en Documents -->
+    <external-files-path
+        name="documents"
+        path="Documents/" />
+
+    <!-- ✅ Imágenes de tarjeta WhatsApp -->
+    <external-files-path name="pictures" path="Pictures/" />
+
+    <!-- Raíz del directorio externo (fallback) -->
+    <external-files-path name="external_files" path="." />
+
+    <!-- Archivos internos -->
     <files-path name="internal_files" path="." />
+
+    <!-- Cache -->
     <cache-path name="cache" path="." />
     <external-cache-path name="external_cache" path="." />
 </paths>
